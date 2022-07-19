@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: 'Niuto';
+  src: url(../fonts/Nunito.ttf);
+}
+
+body {
+  color: #FFF;
+  background: #1A1A40;
+  font-family: "Niuto";
+}
+
+.btn {
+  padding: 0.3rem 0.9rem !important;
+}
+
+.btn-primary {
+  background-color: #7A0BC0;
+  border-color: #7A0BC0;
+}
+
+.btn-primary:hover {
+  background-color: #981ee4;
+  border-color: #981ee4;
+}
+
+#navbar .navbar {
+  background-color: #212151 !important;
+  padding: 1rem 1rem;
+}
+
+#navbar .navbar .nav-item {
+  margin: 0 12px;
+  border-radius: 5px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+#navbar .navbar .nav-item:hover {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  background-color: #583e95;
+}
+
+#navbar .navbar .nav-item .nav-link {
+  padding: 5px 12px;
+  border-radius: 5px;
+  color: #FFF !important;
+}
+
+#navbar .navbar .nav-item .nav-link.active {
+  background-color: #583e95;
+}
+/*# sourceMappingURL=main.css.map */

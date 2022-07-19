@@ -1,0 +1,13 @@
+.btn {
+    padding: 0.3rem 0.9rem!important;
+}
+
+.btn-primary {
+    background-color: $purple;
+    border-color: $purple;
+
+    &:hover {
+        background-color: $purpleish;
+        border-color: $purpleish;
+    }
+}

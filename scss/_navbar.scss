@@ -1,0 +1,27 @@
+#navbar {
+    .navbar {
+        background-color: $blacker!important;
+        padding: 1rem 1rem;
+
+        .nav-item {
+            margin: 0 12px;
+            border-radius: 5px;
+            transition: .3s all;
+
+            &:hover {
+                transition: .3s all;
+                background-color: $navish;
+            }
+
+            .nav-link {
+                padding: 5px 12px;
+                border-radius: 5px;
+                color: $white!important;
+
+                &.active {
+                    background-color: $navish;
+                }
+            }  
+        }
+    }
+}
