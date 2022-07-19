@@ -1,17 +1,25 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="./images/logo-light.png" width="40px" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="../images/logo-light.png" width="40px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./scss.html">SCSS</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../scss.html">SCSS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Frameworks
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../frameworks/laravel9.html">Laravel 9</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     </div>
@@ -24,10 +32,10 @@
                 $(this).addClass('active');
             }  
         });
-        // $(".dropdown-item").each(function() {
-        //     if (this.href === path) {
-        //         $(this).parent().parent().parent().addClass('active');
-        //     }  
-        // });
+        $(".dropdown-item").each(function() {
+            if (this.href === path) {
+                $(this).parent().parent().parent().addClass('active');
+            }  
+        });
     });
 </script>
