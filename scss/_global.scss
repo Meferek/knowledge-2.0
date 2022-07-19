@@ -3,3 +3,13 @@ body {
     background: $black;
     font-family: "Niuto";
 }
+
+code {
+    background-color: $black;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-family: 'JetBrains';
+    margin: 2px 4px;
+    font-size: 13px;
+    color: $pink;
+}

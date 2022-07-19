@@ -3,10 +3,25 @@
   src: url(../fonts/Nunito.ttf);
 }
 
+@font-face {
+  font-family: 'JetBrains';
+  src: url(../fonts/JetBrains.ttf);
+}
+
 body {
   color: #FFF;
   background: #1A1A40;
   font-family: "Niuto";
+}
+
+code {
+  background-color: #1A1A40;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-family: 'JetBrains';
+  margin: 2px 4px;
+  font-size: 13px;
+  color: #FA58B6;
 }
 
 .btn {
@@ -23,9 +38,71 @@ body {
   border-color: #981ee4;
 }
 
+span.badge.bg-secondary {
+  background-color: #981ee4 !important;
+}
+
+.accordion .accordion-item {
+  background-color: #212151 !important;
+  border: 1px solid #1A1A40;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #212151;
+  color: white;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: #86b7fe;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .25rem #981ee440;
+          box-shadow: 0 0 0 .25rem #981ee440;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button::after {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  fill: #981ee4;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-filter: invert(24%) sepia(96%) saturate(5984%) hue-rotate(274deg) brightness(92%) contrast(100%);
+          filter: invert(24%) sepia(96%) saturate(5984%) hue-rotate(274deg) brightness(92%) contrast(100%);
+}
+
+.accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  background-color: #212151;
+  color: white;
+}
+
+.accordion .accordion-item .accordion-body {
+  background-color: #212151;
+}
+
 #navbar .navbar {
   background-color: #212151 !important;
   padding: 1rem 1rem;
+}
+
+#navbar .navbar .navbar-brand {
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+}
+
+#navbar .navbar .navbar-brand:hover {
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #navbar .navbar .nav-item {

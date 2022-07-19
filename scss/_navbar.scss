@@ -3,6 +3,15 @@
         background-color: $blacker!important;
         padding: 1rem 1rem;
 
+        .navbar-brand {
+            transition: .9s ease-in-out;
+
+            &:hover {
+                transition: .9s ease-in-out;
+                transform: rotate(360deg);
+            }
+        }
+
         .nav-item {
             margin: 0 12px;
             border-radius: 5px;
