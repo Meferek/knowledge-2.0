@@ -119,6 +119,58 @@
             </div>
         </div>
         
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        <div class="number"></div>
+                        How to download and install existing project?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        If u have created laravel project and you want to download it just follow this instructions:
+                        <ol>
+                            <li>Download your project from repository</li>
+                            <li>Init all dependencies in your project:
+                                <ul>
+                                    <li><code>composer install</code></li>
+                                    <li><code>npm install</code></li>
+                                </ul>
+                            </li>
+                            <li>Create .env file from .env.example <code>cp .env.example .env</code></li>
+                            <li>Then generate app key <code>php artisan key:generate</code></li>
+                            <li>Create empty database named like your aplication (check name in .env file at DB_DATABASE)</li>
+                            <li>Run all your migrations using <code>php artisan migrate</code></li>
+                            <li>It's all! Run <code>php artisan serv</code></li>
+                        </ol>           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        <div class="number"></div>
+                        Translating laravel project
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Sometimes we want to translate validator messages. To do that we have to:
+                        <ol>
+                            <li>Install composer dependencies <code>composer require laravel-lang/lang --dev</code></li>
+                            <li>After that we need to copy from vender/laravel-lang/lang our translation and paste it to lang in resources folder</li>
+                            <li>Then we change our application language in app/config</li>
+                            <li>All is ready to go!</li>
+                        </ol>           
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
