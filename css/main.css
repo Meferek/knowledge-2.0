@@ -18,6 +18,7 @@ code {
   background-color: #1A1A40;
   border-radius: 5px;
   padding: 5px 12px;
+  text-align: center !important;
   font-family: 'JetBrains';
   margin: 2px 4px;
   font-size: 13px;
@@ -54,7 +55,7 @@ span.badge.bg-secondary {
 
 .accordion .accordion-item .accordion-header .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: #981ee4;
   outline: 0;
   -webkit-box-shadow: 0 0 0 .25rem #981ee440;
           box-shadow: 0 0 0 .25rem #981ee440;
@@ -86,6 +87,7 @@ span.badge.bg-secondary {
 
 .accordion .accordion-item .accordion-body {
   background-color: #212151;
+  line-height: 2;
 }
 
 #navbar .navbar {
@@ -103,6 +105,23 @@ span.badge.bg-secondary {
   transition: .9s ease-in-out;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+#navbar .navbar .navbar-toggler {
+  border: 2px solid #583e95;
+}
+
+#navbar .navbar .navbar-toggler:focus {
+  text-decoration: none;
+  z-index: 3;
+  border-color: #981ee4;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .25rem #981ee440;
+          box-shadow: 0 0 0 .25rem #981ee440;
+}
+
+#navbar .navbar .navbar-toggler span {
+  color: white;
 }
 
 #navbar .navbar .nav-item {

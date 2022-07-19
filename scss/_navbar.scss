@@ -12,6 +12,22 @@
             }
         }
 
+        .navbar-toggler {
+            border: 2px solid $navish;
+
+            &:focus {
+                text-decoration: none;
+                z-index: 3;
+                border-color: #981ee4;
+                outline: 0;
+                box-shadow: 0 0 0 .25rem #981ee440;
+            }
+
+            span {
+                color: white;
+            }
+        }
+
         .nav-item {
             margin: 0 12px;
             border-radius: 5px;

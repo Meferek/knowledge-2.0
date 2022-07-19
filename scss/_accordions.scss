@@ -12,7 +12,7 @@
 
                 &:focus {
                     z-index: 3;
-                    border-color: #86b7fe;
+                    border-color: #981ee4;
                     outline: 0;
                     box-shadow: 0 0 0 .25rem #981ee440;
                 }
@@ -41,6 +41,7 @@
 
         .accordion-body {
             background-color: $blacker;
+            line-height: 2;
         }
     }
 }

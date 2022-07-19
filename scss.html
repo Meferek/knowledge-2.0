@@ -30,19 +30,31 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        <div class="number"></div>
+                        Commands
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <code> => Jakiś tam kod ahha </code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos ratione fuga repellat natus commodi?
-                        <pre>PRECODE</pre>
+                        <code>/test -t [name]</code>- test aksdis teakjd tslak<br>
+                        <code>/test -t [name]</code>- test aksdis teakjd tslak<br>
+                        <code>/test -t [name]</code>- test aksdis teakjd tslak<br>
+
                     </div>
                 </div>
             </div>
         </div>
-
+        
     </div>
+
+    <script>
+        var numbers = [];
+        numbers = document.querySelectorAll('div.number');
+        function count(element, index, array) {
+            element.innerHTML = index + 1 + '.&nbsp;';
+        }
+        numbers.forEach(count);
+    </script>
     
 </body>
 </html>
