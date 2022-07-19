@@ -177,8 +177,9 @@ span.badge.bg-secondary {
           box-shadow: 0 0 0 .25rem #981ee440;
 }
 
-#navbar .navbar .navbar-toggler span {
-  color: white;
+#navbar .navbar .navbar-toggler i {
+  color: #981ee4;
+  font-size: 25px;
 }
 
 #navbar .navbar .nav-item {
@@ -202,5 +203,30 @@ span.badge.bg-secondary {
 
 #navbar .navbar .nav-item .nav-link.active {
   background-color: #583e95;
+}
+
+#navbar .navbar .dropdown-menu {
+  background-color: #212151;
+  padding: 0;
+}
+
+#navbar .navbar .dropdown-menu a {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  color: white !important;
+  background: #212151;
+  border-radius: 5px;
+}
+
+#navbar .navbar .dropdown-menu a:hover {
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  background-color: #583e95;
+}
+
+@media screen and (max-width: 991px) {
+  #navbar .navbar .navbar-collapse {
+    padding-top: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
