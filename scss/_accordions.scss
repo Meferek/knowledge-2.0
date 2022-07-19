@@ -28,13 +28,17 @@
                     background-size: 1.25rem;
                     fill: $purpleish;
                     transition: transform .2s ease-in-out;
+                    transform: rotate(360deg)!important;
                     filter: invert(24%) sepia(96%) saturate(5984%) hue-rotate(274deg) brightness(92%) contrast(100%);
-                    // filter: invert(17%) sepia(77%) saturate(4611%) hue-rotate(274deg) brightness(74%) contrast(113%);
                 }
                 
                 &.collapsed {
                     background-color: $blacker;
                     color: white;
+
+                    &::after {
+                        transform: rotate(180deg)!important;
+                    }
                 }
             }
         }

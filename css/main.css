@@ -25,6 +25,12 @@ code {
   color: #FA58B6;
 }
 
+ul {
+  margin: 0;
+  margin-left: 2.5rem;
+  padding: 0;
+}
+
 .btn {
   padding: 0.3rem 0.9rem !important;
 }
@@ -133,6 +139,8 @@ span.badge.bg-secondary {
   transition: -webkit-transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transform: rotate(360deg) !important;
+          transform: rotate(360deg) !important;
   -webkit-filter: invert(24%) sepia(96%) saturate(5984%) hue-rotate(274deg) brightness(92%) contrast(100%);
           filter: invert(24%) sepia(96%) saturate(5984%) hue-rotate(274deg) brightness(92%) contrast(100%);
 }
@@ -140,6 +148,11 @@ span.badge.bg-secondary {
 .accordion .accordion-item .accordion-header .accordion-button.collapsed {
   background-color: #212151;
   color: white;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
 }
 
 .accordion .accordion-item .accordion-body {
@@ -226,7 +239,7 @@ span.badge.bg-secondary {
 
 @media screen and (max-width: 991px) {
   #navbar .navbar .navbar-collapse {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

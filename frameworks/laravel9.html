@@ -21,7 +21,7 @@
 
     <div id="navbar"></div>
 
-    <div class="container">
+    <div class="container mb-5 pb-5">
 
         <img class="img-fluid d-flex mx-auto mt-5" width="150px" src="../images/knowledge.png" alt="">
         <h2 class="text-center mt-4"><b>Language </b><span class="badge bg-secondary">Laravel 9</span></h2>
@@ -37,8 +37,83 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <code>/test -t [name]</code>- test aksdis teakjd tslak<br>
-                        <code>/test -t [name]</code>- test aksdis teakjd tslak<br>
+                        <code>php artisan make:controller [name]</code>- create a new controller<br>
+                        <code>php artisan make:model [name] -m</code>- create a new model, with special migration (use always with m)<br>
+                        <code>php artisan migrate </code>- make all migrations<br>
+                        <code>php artisan make:factory [name] </code>- create a new factory file<br>
+                        <code>php artisan tinker </code>- special thing to use later commend below<br>
+                        <code>\App\Models\Item::factory()->count(5)->create(); </code>- generate 5 fake items in database if factory file is created well<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="number"></div>
+                        Installation
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Install following aplications:
+                                <ul>
+                                    <li>git</li>
+                                    <li>gitgub</li>
+                                    <li>composer</li>
+                                    <li>xampp</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Create a new folder where you'll have all web aplications (or use htdocs)<br>
+                            </li>
+                            <li>
+                                Run following commands:
+                                <ul>
+                                    <li><code>composer global require laravel/installer</code></li>
+                                    <li><code>laravel new [name]</code></li>
+                                    <li><code>cd [name]</code></li>
+                                    <li><code>php artisan serv</code>- (optional to run laravel)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                If u will use database, create a new one in MySQL witch be named like your Laravel app
+                            </li>
+                            <li>
+                                After connect your DB run<code>php artisan migrate</code>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <div class="number"></div>
+                        How to install login system?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        If you want to create web aplication with users, you have to follow this instructions:
+                        <ol>
+                            <li>Create a database and connect it to Laravel</li>
+                            <li>And use this commands:
+                                <ul>
+                                    <li><code>composer require laravel/ui</code></li>
+                                    <li><code>composer require laravelcollective/html</code></li>
+                                    <li><code>php artisan ui vue --auth</code></li>
+                                    <li><code>php artisan ui:auth</code></li>
+                                </ul>
+                            </li>
+                            <li>Then run php artisan migrate</li>
+                        </ol>
                     </div>
                 </div>
             </div>
