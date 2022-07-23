@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge 2.0</title>
+    <link rel="stylesheet" href="../plugins/bs5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="../plugins/bs5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#navbar").load("../elements/navbar.html")
+        })
+    </script>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container mb-5 pb-5">
+
+        <img class="img-fluid d-flex mx-auto mt-5" width="150px" src="../images/knowledge.png" alt="">
+        <h2 class="text-center mt-4"><b>Language </b><span class="badge bg-secondary">Next.js</span></h2>
+        <h5 class="text-center mt-3">Have a nice day mate.</h5>
+
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="number"></div>
+                        Commands
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <code>npm install -D tailwindcss postcss autoprefixer</code>- install tailwind<br>
+                        <code>npx tailwindcss init -p</code>- init tailwind<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="number"></div>
+                        Installation
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Install following aplications:
+                                <ul>
+                                    <li>git</li>
+                                    <li>gitgub</li>
+                                    <li>node</li>
+                                    <li>xampp</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Create a new folder where you'll have all web aplications (or use htdocs)<br>
+                            </li>
+                            <li>
+                                Run following commands:
+                                <ul>
+                                    <li><code>npx create-next-app@latest --ts</code></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <div class="number"></div>
+                        How to install login system?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        If you want to create web aplication with users, you have to follow this instructions:
+                        <ol>
+                            <li>Create a database and connect it to Laravel</li>
+                            <li>And use this commands:
+                                <ul>
+                                    <li><code>composer require laravel/ui</code></li>
+                                    <li><code>composer require laravelcollective/html</code></li>
+                                    <li><code>php artisan ui vue --auth</code></li>
+                                    <li><code>php artisan ui:auth</code></li>
+                                </ul>
+                            </li>
+                            <li>Then run php artisan migrate</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        <div class="number"></div>
+                        How to download and install existing project?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        If u have created laravel project and you want to download it just follow this instructions:
+                        <ol>
+                            <li>Download your project from repository</li>
+                            <li>Init all dependencies in your project:
+                                <ul>
+                                    <li><code>composer install</code></li>
+                                    <li><code>npm install</code></li>
+                                </ul>
+                            </li>
+                            <li>Create .env file from .env.example <code>cp .env.example .env</code></li>
+                            <li>Then generate app key <code>php artisan key:generate</code></li>
+                            <li>Create empty database named like your aplication (check name in .env file at DB_DATABASE)</li>
+                            <li>Run all your migrations using <code>php artisan migrate</code></li>
+                            <li>It's all! Run <code>php artisan serv</code></li>
+                        </ol>           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        <div class="number"></div>
+                        Translating laravel project
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Sometimes we want to translate validator messages. To do that we have to:
+                        <ol>
+                            <li>Install composer dependencies <code>composer require laravel-lang/lang --dev</code></li>
+                            <li>After that we need to copy from vender/laravel-lang/lang our translation and paste it to lang in resources folder</li>
+                            <li>Then we change our application language in app/config</li>
+                            <li>All is ready to go!</li>
+                        </ol>           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var numbers = [];
+        numbers = document.querySelectorAll('div.number');
+        function count(element, index, array) {
+            element.innerHTML = index + 1 + '.&nbsp;';
+        }
+        numbers.forEach(count);
+    </script>
+    
+</body>
+</html>
