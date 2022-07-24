@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge 2.0</title>
+    <link rel="stylesheet" href="./plugins/bs5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="./plugins/bs5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#navbar").load("./elements/navbar.html")
+        })
+    </script>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container mb-5 pb-5">
+        
+        <img class="img-fluid d-flex mx-auto mt-5" width="150px" src="./images/knowledge.png" alt="">
+        <h2 class="text-center mt-4"><b>Language </b><span class="badge bg-secondary">Affinity Designer</span></h2>
+        <h5 class="text-center mt-3">Have a nice day mate.</h5>
+
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="number"></div>
+                        Commands
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <code>CTRL + J</code>- copy current layer<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        var numbers = [];
+        numbers = document.querySelectorAll('div.number');
+        function count(element, index, array) {
+            element.innerHTML = index + 1 + '.&nbsp;';
+        }
+        numbers.forEach(count);
+    </script>
+    
+</body>
+</html>
